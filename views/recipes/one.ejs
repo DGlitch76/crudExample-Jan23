@@ -1,0 +1,8 @@
+<h1>My recipe</h1>
+<h2><%= title %></h2>
+<p><%- time %></p>
+<ul>
+  <% ingredients.forEach(ingredient => { %>
+  <li><%- ingredient%></li>
+  <% }) %>
+</ul>

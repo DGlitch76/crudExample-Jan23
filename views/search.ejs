@@ -1,0 +1,12 @@
+<h1>Search page</h1>
+<form method="GET" action="/search">
+  <label>
+    Search term
+    <input type="text" name="searchTerm" />
+  </label>
+  <button type="submit">Submit</button>
+</form>
+
+<% if (typeof searchTerm !== 'undefined') { %>
+<p><%- searchTerm %></p>
+<% } %>

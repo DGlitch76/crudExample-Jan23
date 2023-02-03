@@ -1,0 +1,10 @@
+<div style="border: 1px solid black; padding: 1rem; margin: 1rem">
+  <p><%= recipe.title %></p>
+  <p><%= recipe.time %></p>
+  <ul>
+    <% recipe.ingredients.forEach(ingredient => { %>
+    <li><%- ingredient%></li>
+    <% }) %>
+  </ul>
+  <a href="/recipes/<%- recipe._id %>">Details</a>
+</div>
